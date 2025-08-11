@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhoda Muringo's Enhanced HTML5 Form Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 24px;
+            background: #f9f9f9;
+        }
+        header, main, footer {
+            max-width: 800px;
+            margin: auto;
+        }
+        section {
+            background: #fff;
+            padding: 18px 24px;
+            margin-bottom: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px #eee;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 12px;
+        }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #f0f0f0;
+        }
+        label {
+            display: block;
+            margin-top: 12px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            box-sizing: border-box;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 18px;
+            padding: 12px;
+        }
+        legend {
+            font-weight: bold;
+            color: #34495e;
+        }
+        .form-actions {
+            margin-top: 16px;
+        }
+        .form-actions button {
+            padding: 8px 18px;
+            font-size: 1rem;
+        }
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Rhoda Muringo's Multi-Section Web Page</h1>
+        <p>This page demonstrates the use of lists, tables, media, and a complete HTML5 form.</p>
+    </header>
+
+    <main>
+        <!-- Section: Lists -->
+        <section>
+            <h2>My Favorite Hobbies</h2>
+            <ul>
+                <li>Reading books</li>
+                <li>Crocheting</li>
+                <li>Hiking in nature</li>
+                <li>Cooking new recipes</li>
+            </ul>
+            <h3>Steps to Make a Cup of Tea</h3>
+            <ol>
+                <li>Boil water</li>
+                <li>Add tea leaves to the pot</li>
+                <li>Pour hot water into the pot</li>
+                <li>Let it steep for 3-5 minutes</li>
+                <li>Pour into a cup and enjoy</li>
+            </ol>
+        </section>
+
+        <!-- Section: Table -->
+        <section>
+            <h2>Weekly Schedule</h2>
+            <table>
+                <caption>My Weekly Activities</caption>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Morning</th>
+                        <th>Afternoon</th>
+                        <th>Evening</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Work</td>
+                        <td>Gym</td>
+                        <td>Read</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Work</td>
+                        <td>Grocery Shopping</td>
+                        <td>Cook</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Work</td>
+                        <td>Hiking</td>
+                        <td>Watch Movie</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Work</td>
+                        <td>Crochet Practice</td>
+                        <td>Read</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>Work</td>
+                        <td>Friends Meetup</td>
+                        <td>Relax</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    
+                <!-- Section: Media -->
+                <section>
+                    <h2>Media Gallery</h2>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="A scenic mountain landscape">
+                        <figcaption>Beautiful mountain view during sunrise.</figcaption>
+                    </figure>
+                    <figure>
+                        <video controls poster="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" width="400">
+                            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>Big Buck Bunny</figcaption>
+                    </figure>
+                    <figure>
+                        <audio controls>
+                            <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                        </audio>
+                        <figcaption> Horse Gallop</figcaption>
+                    </figure>
+                </section>
+        
+                <!-- Section: HTML5 Form -->
+                <section>
+                    <h2>Contact Rhoda Muringo</h2>
+                    <form action="#" method="post" autocomplete="on">
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3" autocomplete="name">
+        
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+        
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="e.g. 123-456-7890" pattern="^\d{3}-\d{3}-\d{4}$" title="Format: 123-456-7890" required autocomplete="tel">
+        
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Preferences</legend>
+                            
+                            <label for="contact-method">Preferred Contact Method</label>
+                            <select id="contact-method" name="contact-method" required>
+                                <option value="">--Please choose an option--</option>
+                                <option value="email">Email</option>
+                                <option value="phone">Phone</option>
+                            </select>
+        
+                            <label>Subscribe to Newsletter?</label>
+                            <input type="radio" id="subscribe-yes" name="newsletter" value="yes" required>
+                            <label for="subscribe-yes" style="display:inline;font-weight:normal;">Yes</label>
+                            <input type="radio" id="subscribe-no" name="newsletter" value="no">
+                            <label for="subscribe-no" style="display:inline;font-weight:normal;">No</label>
+        
+                            <label for="interests">Your Interests</label>
+                            <select id="interests" name="interests[]" multiple size="4" required>
+                                <option value="reading">Reading</option>
+                                <option value="music">Music</option>
+                                <option value="sports">Sports</option>
+                                <option value="travel">Travel</option>
+                            </select>
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Message</legend>
+                            
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Type your message here..." required minlength="10"></textarea>
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Other Details</legend>
+                            
+                            <label for="website">Your Website (optional)</label>
+                            <input type="url" id="website" name="website" placeholder="https://yourwebsite.com" autocomplete="url">
+        
+                            <label for="referral">How did you hear about me?</label>
+                            <input type="text" id="referral" name="referral" readonly value="Internet Search">
+                        </fieldset>
+        
+                        <fieldset>
+                            <legend>Security</legend>
+                            
+                            <label for="password">Create a Password</label>
+                            <input type="password" id="password" name="password" placeholder="At least 8 characters" required minlength="8" pattern=".{8,}" autocomplete="new-password">
+        
+                            <label for="color">Favorite Color</label>
+                            <input type="color" id="color" name="color" value="#2c3e50">
+                        </fieldset>
+        
+                        <div class="form-actions">
+                            <button type="submit">Submit</button>
+                            <button typeBig Buck Bunny></button> </figcaption> </div>
+            </figure>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rhoda Muringo. All rights reserved.</p>
